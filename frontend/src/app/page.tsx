@@ -159,19 +159,19 @@ export default function Home() {
 
               {/* Animated CTA Buttons */}
               <div className="hero-element flex flex-col gap-4 sm:flex-row sm:items-center animate-cinematic-entrance" style={{ animationDelay: '0.8s' }}>
-                <a href="#get-started" className="group relative inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-[#7c3aed] to-[#22c55e] px-8 py-4 text-base font-semibold text-white shadow-2xl shadow-[#7c3aed]/30 transition-all duration-300 hover:shadow-[#7c3aed]/50 hover:scale-105 hover:-translate-y-1 active:scale-95 animate-[button-pulse_2s_ease-in-out_infinite]">
+                <button className="group relative inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-[#7c3aed] to-[#22c55e] px-8 py-4 text-base font-semibold text-white shadow-2xl shadow-[#7c3aed]/30 transition-all duration-300 hover:shadow-[#7c3aed]/50 hover:scale-105 hover:-translate-y-1 active:scale-95 animate-[button-pulse_2s_ease-in-out_infinite]">
                   <span className="relative z-10">Start gifting</span>
                   <svg className="ml-3 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
                   </svg>
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#6d28d9] to-[#16a34a] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                </a>
-                <a href="#rewards" className="group inline-flex items-center justify-center rounded-xl border-2 border-foreground/15 bg-background/60 px-8 py-4 text-base font-semibold text-foreground shadow-lg backdrop-blur-sm transition-all duration-300 hover:bg-foreground/5 hover:border-[#7c3aed]/30 hover:shadow-xl">
+                </button>
+                <button className="group inline-flex items-center justify-center rounded-xl border-2 border-foreground/15 bg-background/60 px-8 py-4 text-base font-semibold text-foreground shadow-lg backdrop-blur-sm transition-all duration-300 hover:bg-foreground/5 hover:border-[#7c3aed]/30 hover:shadow-xl">
                   <span>See how it works</span>
                   <svg className="ml-3 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M9 18l6-6-6-6"/>
                   </svg>
-          </a>
+          </button>
         </div>
 
               {/* Animated Feature Pills */}
@@ -439,9 +439,9 @@ export default function Home() {
                 <h2 className="text-pretty text-2xl font-bold tracking-tight sm:text-3xl">Ready to spread joy?</h2>
                 <p className="mt-2 max-w-2xl text-sm text-foreground/70 sm:text-base">Join thousands of thoughtful gifters who earn rewards while making others smile. Start your gifting journey in seconds.</p>
               </div>
-              <a href="#" className="inline-flex items-center justify-center rounded-xl bg-[#22c55e] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#22c55e]/30 transition hover:bg-[#16a34a]">
+              <button className="inline-flex items-center justify-center rounded-xl bg-[#22c55e] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#22c55e]/30 transition hover:bg-[#16a34a]">
                 Start Gifting Today
-              </a>
+              </button>
             </div>
           </div>
         </div>
