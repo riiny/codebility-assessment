@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+
 import Reveal from "../components/Reveal";
 import ScrollProgress from "../components/ScrollProgress";
 import GiftCards from "../components/GiftCards";
@@ -393,7 +393,7 @@ export default function Home() {
 
             {/* Step 1: Instant Cashback */}
             <div className="relative flex flex-col items-center text-center flex-1 min-w-0 w-full bg-background border border-foreground/10 rounded-2xl p-6 shadow-sm">
-              <span className="mb-2 text-2xl" style={{color:'#22c55e'}} >💵</span>
+              <span className="mb-2 text-2xl" style={{color:'#22c55e'}} >$</span>
               <h4 className="font-bold text-base" style={{color:'#22c55e'}}>Instant Cashback</h4>
               <p className="text-xs text-foreground/70">Earn up to 5% back with every gift, paid instantly.</p>
               {/* Connector */}
@@ -402,7 +402,7 @@ export default function Home() {
 
             {/* Step 2: No Hidden Fees */}
             <div className="relative flex flex-col items-center text-center flex-1 min-w-0 w-full bg-background border border-foreground/10 rounded-2xl p-6 shadow-sm">
-              <span className="mb-2 text-2xl" style={{color:'#06b6d4'}}>🐷</span>
+              <span className="mb-2 text-2xl" style={{color:'#06b6d4'}}>P</span>
               <h4 className="font-bold text-base" style={{color:'#06b6d4'}}>No Hidden Fees</h4>
               <p className="text-xs text-foreground/70">$0 monthly fees. No tricks, just gifts.</p>
               {/* Connector */}
@@ -411,7 +411,7 @@ export default function Home() {
 
             {/* Step 3: Bank-Grade Security */}
             <div className="relative flex flex-col items-center text-center flex-1 min-w-0 w-full bg-background border border-foreground/10 rounded-2xl p-6 shadow-sm">
-              <span className="mb-2 text-2xl" style={{color:'#7c3aed'}}>🛡️</span>
+              <span className="mb-2 text-2xl" style={{color:'#7c3aed'}}>S</span>
               <h4 className="font-bold text-base" style={{color:'#7c3aed'}}>Bank-Grade Security</h4>
               <p className="text-xs text-foreground/70">256-bit SSL. Protected. Fast digital delivery.</p>
               {/* Connector */}
@@ -420,7 +420,7 @@ export default function Home() {
 
             {/* Step 4: VIP Level */}
             <div className="relative flex flex-col items-center text-center flex-1 min-w-0 w-full bg-background border border-foreground/10 rounded-2xl p-6 shadow-sm">
-              <span className="mb-2 text-2xl" style={{color:'#fbbf24'}}>🎉</span>
+              <span className="mb-2 text-2xl" style={{color:'#fbbf24'}}>V</span>
               <h4 className="font-bold text-base" style={{color:'#fbbf24'}}>Level Up: VIP</h4>
               <p className="text-xs text-foreground/70">Unlock exclusive perks & celebrate every milestone.</p>
             </div>
@@ -450,7 +450,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-foreground/10 py-4 text-center text-sm text-foreground/60">
-        © {new Date().getFullYear()} Riin Valeña. All rights reserved.
+        © {new Date().getFullYear()} Riin Valena. All rights reserved.
       </footer>
     </div>
   );

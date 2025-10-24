@@ -2,6 +2,7 @@
 
 import Reveal from "./Reveal";
 import { useEffect } from "react";
+import Image from "next/image";
 
 export default function GiftCards() {
   useEffect(() => {
@@ -138,10 +139,10 @@ export default function GiftCards() {
   ];
 
   const categories = [
-    { name: "Food & Dining", icon: "🍽️", count: "12 brands" },
-    { name: "Shopping", icon: "🛍️", count: "8 brands" },
-    { name: "Entertainment", icon: "🎬", count: "6 brands" },
-    { name: "Services", icon: "🚗", count: "4 brands" }
+    { name: "Food & Dining", icon: "F", count: "12 brands" },
+    { name: "Shopping", icon: "S", count: "8 brands" },
+    { name: "Entertainment", icon: "E", count: "6 brands" },
+    { name: "Services", icon: "S", count: "4 brands" }
   ];
 
   return (
@@ -207,12 +208,14 @@ export default function GiftCards() {
                 {/* Card Image Area */}
                 <div className="relative aspect-[4/3] overflow-hidden">
                   {/* Placeholder Image */}
-                    <img 
+                  <Image 
                     src={brand.image} 
-                      alt={`${brand.name} gift card`}
+                    alt={`${brand.name} gift card`}
+                    width={400}
+                    height={300}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                     loading="lazy"
-                    />
+                  />
                   
                   {/* Gradient overlay for better text readability */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />

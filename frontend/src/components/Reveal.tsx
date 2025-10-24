@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, PropsWithChildren } from "react";
 
 type RevealProps = PropsWithChildren<{
-  as?: keyof JSX.IntrinsicElements;
+  as?: React.ElementType;
   delayMs?: number;
   threshold?: number;
   rootMargin?: string;
@@ -22,7 +22,7 @@ export default function Reveal({
   once = true,
   children,
 }: RevealProps) {
-  const Tag = as as any;
+  const Tag = as as React.ElementType;
   const ref = useRef<HTMLElement | null>(null);
   const [visible, setVisible] = useState(false);
   const [hasAppeared, setHasAppeared] = useState(false);
@@ -59,7 +59,7 @@ export default function Reveal({
   const classes = `${base} ${visible ? "is-visible" : ""} ${className}`.trim();
 
   return (
-    <Tag ref={ref as any} className={classes}>
+    <Tag ref={ref as React.Ref<HTMLElement>} className={classes}>
       {children}
     </Tag>
   );
